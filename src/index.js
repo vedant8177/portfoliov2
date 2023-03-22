@@ -1,0 +1,34 @@
+const hamburgerMenu = document.querySelector("#hamburgerMenu");
+const hamburgerBtn = document.querySelector("#hamburgerBtn");
+const hamburgerCloseBtn = document.querySelector("#hamburgerCloseBtn");
+const burgerNavLinks = document.querySelectorAll(".burger-nav-links");
+const copyrightYear = document.querySelector("#copyright-year");
+let d = new Date;
+let latestYear = d.getFullYear();
+
+copyrightYear.innerHTML = latestYear;
+
+burgerNavLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburgerMenu.classList.add("hidden");
+    hamburgerMenu.classList.remove("flex");
+  });
+});
+
+hamburgerBtn.addEventListener("click", () => {
+  hamburgerMenu.classList.remove("hidden");
+  hamburgerMenu.classList.add("flex");
+});
+
+hamburgerCloseBtn.addEventListener("click", () => {
+  hamburgerMenu.classList.add("hidden");
+  hamburgerMenu.classList.remove("flex");
+});
+
+const projectCard = document.querySelectorAll(".project-card");
+
+projectCard.forEach((card) => {
+  if(!card.classList.contains("featured")) {
+    card.classList.remove("hidden");
+  }
+});
