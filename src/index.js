@@ -25,10 +25,16 @@ hamburgerCloseBtn.addEventListener("click", () => {
   hamburgerMenu.classList.remove("flex");
 });
 
-const projectCard = document.querySelectorAll(".project-card");
+const cards = document.querySelectorAll(".project-card");
+const moreBtn = document.querySelector("#moreBtn");
 
-projectCard.forEach((card) => {
-  if(!card.classList.contains("featured")) {
-    card.classList.remove("hidden");
+for (let i = 0; i < 3; i++) {
+  cards[i].classList.remove('hidden');
+}
+
+moreBtn.addEventListener('click', () => {
+  for (let i = 3; i < cards.length; i++) {
+    cards[i].classList.remove('hidden')
   }
+  moreBtn.classList.add('hidden');
 });
