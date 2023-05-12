@@ -38,3 +38,8 @@ moreBtn.addEventListener('click', () => {
   }
   moreBtn.classList.add('hidden');
 });
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector('.loader-container');
+  loader.classList.add("hidden");
+})
