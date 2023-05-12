@@ -39,7 +39,8 @@ moreBtn.addEventListener('click', () => {
   moreBtn.classList.add('hidden');
 });
 
+
+const loader = document.querySelector('.loader-container');
 window.addEventListener("load", () => {
-  const loader = document.querySelector('.loader-container');
   loader.classList.add("hidden");
-})
+});
