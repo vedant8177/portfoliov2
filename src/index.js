@@ -43,3 +43,13 @@ const loader = document.querySelector('.loader-container');
 window.addEventListener('load', () => {
   loader.classList.add('hiddenX');
 })
+
+function certificationBE() {
+  window.open('https://www.freecodecamp.org/certification/vedantssj/back-end-development-and-apis', '_blank');
+}
+function certificationFE() {
+  window.open('https://www.freecodecamp.org/certification/vedantssj/responsive-web-design', '_blank');
+}
+function certificationJS() {
+  window.open('https://www.freecodecamp.org/certification/vedantssj/javascript-algorithms-and-data-structures', '_blank');
+}

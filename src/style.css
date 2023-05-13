@@ -65,6 +65,45 @@
     border: 3px solid;
     border-color: #FF3D00 transparent;
   }
+
+  .certification-card-js {
+    background: url('./assets/img/certificate/js.webp');
+  }
+
+  .certification-card-fe {
+    background: url('./assets/img/certificate/responsive.webp');
+  }
+
+  .certification-card-be {
+    background: url('./assets/img/certificate/backend.webp');
+  }
+
+  .certification-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 10/8;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .certification-card-overlay {
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,.4), transparent);
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    transition: .3s linear all;
+  }
+
+  .certification-card:hover .certification-card-overlay {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  .bg-color-gg {
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+  }
   
   @keyframes rotation {
     0% {
